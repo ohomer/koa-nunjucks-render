@@ -1,0 +1,26 @@
+{
+  "name": "koa-nunjucks-render",
+  "version": "1.0.0",
+  "description": "A simple nunjucks adapter for koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ohomer/koa-nunjucks.git"
+  },
+  "keywords": [
+    "koa",
+    "nunjucks"
+  ],
+  "author": "OHomer Rilak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohomer/koa-nunjucks/issues"
+  },
+  "homepage": "https://github.com/ohomer/koa-nunjucks#readme",
+  "dependencies": {
+    "nunjucks": "^2.1.0"
+  }
+}
