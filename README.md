@@ -27,11 +27,21 @@ Example usage:
     app.use(nunjucks('views', {
       ext: '.html',
       noCache: process.env.NODE_ENV === 'development',
-      throwOnUndefined: true
+      throwOnUndefined: true,
+      filters: {
+        json: function(str) {
+          return JSON.stringify(str, null, 2);
+        }
+      }
     }));
 
-Note: the configuration object is passed directly to `nunjucks`. The only additional
-configuration option is the (optional) `ext` which allows you to specify a common suffix to your templates.
+Note: the configuration object is passed directly to `nunjucks`.
+
+It adds the additional (onptioanl) configurations:
+
+*  `ext` which allows you to specify a common suffix to your templates.
+*  `filters` an object of filter names and filters functions
+
 
 And using it is also very clean:
 

@@ -1,6 +1,6 @@
 {
   "name": "koa-nunjucks-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple nunjucks adapter for koa",
   "main": "index.js",
   "scripts": {

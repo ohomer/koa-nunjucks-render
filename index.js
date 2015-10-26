@@ -4,9 +4,15 @@ var nunjucks = require('nunjucks');
 // with an additional 'ext' for extention
 //  (a common suffix for templates)
 module.exports = function(path, opts) {
-  nunjucks.configure(path, opts);
+  var env = nunjucks.configure(path, opts);
 
   var ext = opts.ext || '';
+
+  if (opts.filters) {
+    for (var f in opts.filters) {
+      env.addFilter(f, opts.filters[f]);
+    }
+  }
 
   return function*(next) {
     var self = this;
