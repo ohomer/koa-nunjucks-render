@@ -32,6 +32,9 @@ Example usage:
         json: function(str) {
           return JSON.stringify(str, null, 2);
         }
+      },
+      globals: {
+        version: 'v8.0.1'
       }
     }));
 
@@ -41,6 +44,7 @@ It adds the additional (onptioanl) configurations:
 
 *  `ext` which allows you to specify a common suffix to your templates.
 *  `filters` an object of filter names and filters functions
+*  `globals` an object of globals to add
 
 
 And using it is also very clean:

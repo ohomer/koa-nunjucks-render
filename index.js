@@ -8,10 +8,14 @@ module.exports = function(path, opts) {
 
   var ext = opts.ext || '';
 
-  if (opts.filters) {
-    for (var f in opts.filters) {
-      env.addFilter(f, opts.filters[f]);
-    }
+  var filters = opts.filters || {};
+  for (var f in filters) {
+    env.addFilter(f, filters[f]);
+  }
+  
+  var globals = opts.globals || {};
+  for (var g in globals) {
+    env.addGlobal(g, globals[f]);
   }
 
   return function*(next) {
