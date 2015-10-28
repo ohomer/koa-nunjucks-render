@@ -12,10 +12,10 @@ module.exports = function(path, opts) {
   for (var f in filters) {
     env.addFilter(f, filters[f]);
   }
-  
+
   var globals = opts.globals || {};
   for (var g in globals) {
-    env.addGlobal(g, globals[f]);
+    env.addGlobal(g, globals[g]);
   }
 
   return function*(next) {
