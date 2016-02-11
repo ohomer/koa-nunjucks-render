@@ -35,6 +35,9 @@ Example usage:
       },
       globals: {
         version: 'v8.0.1'
+      },
+      extensions: {
+        MyExtension: new MyExtension()
       }
     }));
 
@@ -45,6 +48,7 @@ It adds the additional (onptioanl) configurations:
 *  `ext` which allows you to specify a common suffix to your templates.
 *  `filters` an object of filter names and filters functions
 *  `globals` an object of globals to add
+*  `extensions` an object of extensions to add
 
 
 And using it is also very clean:
