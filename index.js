@@ -18,6 +18,11 @@ module.exports = function(path, opts) {
     env.addGlobal(g, globals[g]);
   }
 
+  var extensions = opts.extensions || {};
+  for (var e in extensions) {
+    env.addExtension(e, extensions[e]);
+  }
+
   return function*(next) {
     var self = this;
 
