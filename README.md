@@ -26,7 +26,7 @@ Example usage:
 
     app.use(nunjucks('views', {
       ext: '.html',
-      noCache: process.env.NODE_ENV === 'development',
+      noCache: process.env.NODE_ENV !== 'production',
       throwOnUndefined: true,
       filters: {
         json: function(str) {
