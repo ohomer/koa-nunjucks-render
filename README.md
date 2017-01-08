@@ -1,6 +1,8 @@
 koa-nunjucks-render
 ------------
 
+[![NPM version](https://badge.fury.io/js/koa-nunjucks-render.svg)]
+
 Fast koa middleware for using nunjucks, that allows you to easily and efficiently render nunjucks templates.
 
 
