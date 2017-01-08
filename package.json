@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ohomer/koa-nunjucks#readme",
   "dependencies": {
-    "nunjucks": "^2.3.0"
+    "nunjucks": "^3.0.0"
   }
 }
